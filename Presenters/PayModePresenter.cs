@@ -50,10 +50,10 @@ namespace Supermarket_mvp1.Presenters
         private void SavePayMode(object? sender, EventArgs e)
         {
 
-            var payMode = PayModelView();
+            var payMode = new PayModeModel();
             payMode.Id = Convert.ToInt32(view.PayModeId);
             payMode.Name = view.PayModeName;
-            payMode.Observstion = view.PayModeObservation;
+            payMode.Observation = view.PayModeObservation;
 
             try
             {
@@ -126,7 +126,7 @@ namespace Supermarket_mvp1.Presenters
         private void SearchPayMode(object? sender, EventArgs e)
         {
             bool emptyValue = string.IsNullOrWhiteSpace(this.view.SearchValue);
-            if (emptyValue)
+            if (emptyValue == false)
             {
                 payModeList = repository.GetByValue(this.view.SearchValue);
             }
