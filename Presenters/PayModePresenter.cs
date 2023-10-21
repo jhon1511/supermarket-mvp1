@@ -86,6 +86,6 @@ namespace Supermarket_mvp1.Presenters
 
         //private BindingSource payModeBindinSource;
         //private IEnumerable<PayModeModel> payModeList;
-    }
+   // }
     }
 }
