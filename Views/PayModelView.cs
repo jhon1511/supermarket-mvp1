@@ -37,15 +37,18 @@ namespace Supermarket_mvp1.Views
             };
         }
 
-        public string PayModeId {
+        public string PayModeId
+        {
             get { return TxtPayModeId.Text; }
             set { TxtPayModeId.Text = value; }
         }
-        public string PayModeName {
+        public string PayModeName
+        {
             get { return TxtPayModeName.Text; }
             set { TxtPayModeName.Text = value; }
         }
-        public string PayModeObservation {
+        public string PayModeObservation
+        {
             get { return TxtPayModeObservation.Text; }
             set { TxtPayModeObservation.Text = value; }
         }
@@ -64,7 +67,8 @@ namespace Supermarket_mvp1.Views
             get { return isSuccessful; }
             set { isSuccessful = value; }
         }
-        public string Message {
+        public string Message
+        {
             get { return messaje; }
             set { messaje = value; }
         }
@@ -80,6 +84,36 @@ namespace Supermarket_mvp1.Views
         {
             DgPayMode.DataSource = payModeList;
         }
+        private static PayModelView instance;
+
+        public static PayModelView GetInstance() //(Form parenContainer)
+        {
+
+            if (instance == null || instance.IsDisposed)
+            {
+                instance = new PayModelView();
+                //instance.MdiParent = parenContainer;
+
+                //instance.FormBorderStyle = FormBorderStyle.None;
+                //instance.Dock = DockStyle.Fill;
+            }
+            else
+            {
+                if (instance.WindowState == FormWindowState.Minimized)
+                {
+                    instance.WindowState = FormWindowState.Normal;
+                }
+                instance.BringToFront();
+            }
+            return instance;
+
+        }
+
+
+
+
+
+
         private void label5_Click(object sender, EventArgs e)
         {
 

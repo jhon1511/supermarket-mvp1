@@ -1,10 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Supermarket_mvp1.Models;
 using Supermarket_mvp1.Views;
-using Supermarket_mvp1.Models;
 
 namespace Supermarket_mvp1.Presenters
 {
@@ -40,7 +35,7 @@ namespace Supermarket_mvp1.Presenters
 
         private void loadAllPayModeList()
         {
-            throw new NotImplementedException();
+            //throw new NotImplementedException();
             payModeList = repository.GetAll();
             payModeBindingSource.DataSource = payModeList;
         }
@@ -86,6 +81,6 @@ namespace Supermarket_mvp1.Presenters
 
         //private BindingSource payModeBindinSource;
         //private IEnumerable<PayModeModel> payModeList;
-   // }
+        // }
     }
 }
