@@ -16,5 +16,20 @@ namespace Supermarket_mvp1.Views
         {
             InitializeComponent();
         }
+
+        private void tabPagePayModeList_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tabProductsDetail_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -1,6 +1,6 @@
 ﻿namespace Supermarket_mvp1.Views
 {
-    partial class PayModelView
+    partial class PayModeView
     {
         /// <summary>
         /// Required designer variable.
@@ -99,6 +99,7 @@
             tabControl1.SelectedIndex = 0;
             tabControl1.Size = new Size(800, 350);
             tabControl1.TabIndex = 1;
+            tabControl1.SelectedIndexChanged += tabControl1_SelectedIndexChanged;
             // 
             // tabPagePayModeList
             // 
@@ -127,6 +128,7 @@
             BtnClose.Size = new Size(137, 52);
             BtnClose.TabIndex = 7;
             BtnClose.UseVisualStyleBackColor = true;
+            BtnClose.Click += BtnClose_Click;
             // 
             // BtnDelete
             // 
@@ -137,6 +139,7 @@
             BtnDelete.Size = new Size(137, 52);
             BtnDelete.TabIndex = 6;
             BtnDelete.UseVisualStyleBackColor = true;
+            BtnDelete.Click += BtnDelete_Click;
             // 
             // BtnEdit
             // 
@@ -147,6 +150,7 @@
             BtnEdit.Size = new Size(137, 52);
             BtnEdit.TabIndex = 5;
             BtnEdit.UseVisualStyleBackColor = true;
+            BtnEdit.Click += BtnEdit_Click;
             // 
             // BtnNew
             // 
@@ -157,6 +161,7 @@
             BtnNew.Size = new Size(137, 52);
             BtnNew.TabIndex = 4;
             BtnNew.UseVisualStyleBackColor = true;
+            BtnNew.Click += BtnNew_Click;
             // 
             // DgPayMode
             // 
@@ -181,6 +186,7 @@
             BtnSearch.Size = new Size(69, 39);
             BtnSearch.TabIndex = 2;
             BtnSearch.UseVisualStyleBackColor = true;
+            BtnSearch.Click += BtnSearch_Click;
             // 
             // TxtSearch
             // 
@@ -293,14 +299,14 @@
             label3.TabIndex = 0;
             label3.Text = "Pay Mode Id";
             // 
-            // PayModelView
+            // PayModeView
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
             Controls.Add(tabControl1);
             Controls.Add(panel1);
-            Name = "PayModelView";
+            Name = "PayModeView";
             Text = "Pay Mode Management";
             panel1.ResumeLayout(false);
             panel1.PerformLayout();

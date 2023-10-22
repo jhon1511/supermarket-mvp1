@@ -14,6 +14,9 @@
         public event EventHandler ShowCustomerView;
         public event EventHandler ShowProductView;
 
+        private void BtnPayMode_Click(object sender, EventArgs e)
+        {
 
+        }
     }
 }

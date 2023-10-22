@@ -10,13 +10,13 @@ using System.Windows.Forms;
 
 namespace Supermarket_mvp1.Views
 {
-    public partial class PayModelView : Form, IPayModeView
+    public partial class PayModeView : Form, IPayModeView
     {
         private bool isEdit;
         private bool isSuccessful;
         private string messaje;
 
-        public PayModelView()
+        public PayModeView()
         {
             InitializeComponent();
             AssociateAndRaiseViewEvents();
@@ -49,7 +49,7 @@ namespace Supermarket_mvp1.Views
             };
             BtnEdit.Click += delegate
             {
-                AddNewEvent?.Invoke(this, EventArgs.Empty);
+                EditEvent?.Invoke(this, EventArgs.Empty);
 
                 tabControl1.TabPages.Remove(tabPagePayModeList);
                 tabControl1.TabPages.Add(tabPagePayModeDetail);
@@ -58,13 +58,13 @@ namespace Supermarket_mvp1.Views
             };
             BtnSave.Click += delegate
             {
-                AddNewEvent?.Invoke(this, EventArgs.Empty);
+                  SaveEvent?.Invoke(this, EventArgs.Empty);
 
                 if (isSuccessful)
                 {
 
-                    tabControl1.TabPages.Remove(tabPagePayModeList);
-                    tabControl1.TabPages.Add(tabPagePayModeDetail);
+                    tabControl1.TabPages.Remove(tabPagePayModeDetail);
+                    tabControl1.TabPages.Add(tabPagePayModeList);
 
                 }
                 MessageBox.Show(Message);
@@ -73,10 +73,10 @@ namespace Supermarket_mvp1.Views
 
             BtnCancel.Click += delegate
             {
-                AddNewEvent?.Invoke(this, EventArgs.Empty);
+                CancelEvent?.Invoke(this, EventArgs.Empty);
 
-                tabControl1.TabPages.Remove(tabPagePayModeList);
-                tabControl1.TabPages.Add(tabPagePayModeDetail);
+                tabControl1.TabPages.Remove(tabPagePayModeDetail);
+                tabControl1.TabPages.Add(tabPagePayModeList);
 
             };
             BtnDelete.Click += delegate
@@ -141,14 +141,14 @@ namespace Supermarket_mvp1.Views
         {
             DgPayMode.DataSource = payModeList;
         }
-        private static PayModelView instance;
+        private static PayModeView instance;
 
-        public static PayModelView GetInstance(Form parenContainer)
+        public static PayModeView GetInstance(Form parenContainer)
         {
 
             if (instance == null || instance.IsDisposed)
             {
-                instance = new PayModelView();
+                instance = new PayModeView();
                 instance.MdiParent = parenContainer;
 
                 instance.FormBorderStyle = FormBorderStyle.None;
@@ -174,6 +174,31 @@ namespace Supermarket_mvp1.Views
         private void label5_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void BtnSearch_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BtnNew_Click(object sender, EventArgs e)
+        {
+        }
+
+        private void BtnEdit_Click(object sender, EventArgs e)
+        {
+        }
+
+        private void BtnDelete_Click(object sender, EventArgs e)
+        {
+        }
+
+        private void BtnClose_Click(object sender, EventArgs e)
+        {
+        }
+
+        private void tabControl1_SelectedIndexChanged(object sender, EventArgs e)
+        {
         }
     }
 }
