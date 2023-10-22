@@ -10,19 +10,19 @@ namespace Supermarket_mvp1.Models
 {
     internal class CategoriesModel
     {
-        [DisplayName("Pay Mode Id")]
+        [DisplayName("Categorie Id")]
         public int Id { get; set; }
 
-        [DisplayName("Pay Mode Name")]
-        [Required(ErrorMessage = "Pay mode name is required")]
+        [DisplayName("Categorie Name")]
+        [Required(ErrorMessage = "Categorie name is required")]
         [StringLength(50, MinimumLength = 3,
-        ErrorMessage = "Pay mode name must be between 3 and 50 characters")]
+        ErrorMessage = "Categorie name must be between 3 and 50 characters")]
         public string Name { get; set; }
 
-        [DisplayName("Observacion")]
-        [Required(ErrorMessage = "Pay mode observacion is required")]
+        [DisplayName("Categorie Observation")]
+        [Required(ErrorMessage = "Categorie observacion is required")]
         [StringLength(200, MinimumLength = 3, ErrorMessage =
-        "Pay mode observation must be between 3 and 200 characters")]
+        "Categorie observation must be between 3 and 200 characters")]
         public string Observation { get; set; }
     }
 }

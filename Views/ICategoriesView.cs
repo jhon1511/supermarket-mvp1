@@ -10,7 +10,7 @@ namespace Supermarket_mvp1.Views
     {
         string CategorieId { get; set; }
         string CategorieName { get; set; }
-        string  PayModeObservation { get; set; }
+        string  CategorieObservation { get; set; }
         string SearchValue { get; set; }
         bool IsEdit { get; set; }
         bool IsSuccessful { get; set; }
@@ -23,9 +23,9 @@ namespace Supermarket_mvp1.Views
         event EventHandler SaveEvent;
         event EventHandler CancelEvent;
 
-        void SetPayModeListBildingSource(BindingSource CategoriesList);
+        void SetCategorieListBildingSource(BindingSource CategoriesList);
         void Show();
 
     }
 }
-}
+

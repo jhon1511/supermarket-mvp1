@@ -33,16 +33,11 @@
             label1 = new Label();
             tabControl1 = new TabControl();
             tabCategorieList = new TabPage();
-            button1 = new Button();
-            button2 = new Button();
-            button3 = new Button();
-            button4 = new Button();
-            button5 = new Button();
+            DgCategorie = new DataGridView();
             BtnClose = new Button();
             BtnDelete = new Button();
             BtnEdit = new Button();
             BtnNew = new Button();
-            DgCategorie = new DataGridView();
             BtnSearch = new Button();
             TxtSearch = new TextBox();
             label2 = new Label();
@@ -107,16 +102,11 @@
             // 
             // tabCategorieList
             // 
-            tabCategorieList.Controls.Add(button1);
-            tabCategorieList.Controls.Add(button2);
-            tabCategorieList.Controls.Add(button3);
-            tabCategorieList.Controls.Add(button4);
-            tabCategorieList.Controls.Add(button5);
+            tabCategorieList.Controls.Add(DgCategorie);
             tabCategorieList.Controls.Add(BtnClose);
             tabCategorieList.Controls.Add(BtnDelete);
             tabCategorieList.Controls.Add(BtnEdit);
             tabCategorieList.Controls.Add(BtnNew);
-            tabCategorieList.Controls.Add(DgCategorie);
             tabCategorieList.Controls.Add(BtnSearch);
             tabCategorieList.Controls.Add(TxtSearch);
             tabCategorieList.Controls.Add(label2);
@@ -128,118 +118,66 @@
             tabCategorieList.Text = "Categorie List";
             tabCategorieList.UseVisualStyleBackColor = true;
             // 
-            // button1
+            // DgCategorie
             // 
-            button1.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-            button1.Image = Properties.Resources.cancel;
-            button1.Location = new Point(649, 259);
-            button1.Name = "button1";
-            button1.Size = new Size(137, 52);
-            button1.TabIndex = 12;
-            button1.UseVisualStyleBackColor = true;
-            // 
-            // button2
-            // 
-            button2.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-            button2.Image = Properties.Resources.save;
-            button2.Location = new Point(649, 189);
-            button2.Name = "button2";
-            button2.Size = new Size(137, 52);
-            button2.TabIndex = 11;
-            button2.UseVisualStyleBackColor = true;
-            // 
-            // button3
-            // 
-            button3.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-            button3.Image = Properties.Resources.edit;
-            button3.Location = new Point(649, 121);
-            button3.Name = "button3";
-            button3.Size = new Size(137, 52);
-            button3.TabIndex = 10;
-            button3.UseVisualStyleBackColor = true;
-            // 
-            // button4
-            // 
-            button4.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-            button4.Image = Properties.Resources._new;
-            button4.Location = new Point(649, 52);
-            button4.Name = "button4";
-            button4.Size = new Size(137, 52);
-            button4.TabIndex = 9;
-            button4.UseVisualStyleBackColor = true;
-            // 
-            // button5
-            // 
-            button5.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-            button5.Image = Properties.Resources.search_small;
-            button5.Location = new Point(574, 23);
-            button5.Name = "button5";
-            button5.Size = new Size(69, 39);
-            button5.TabIndex = 8;
-            button5.UseVisualStyleBackColor = true;
+            DgCategorie.AllowUserToAddRows = false;
+            DgCategorie.AllowUserToDeleteRows = false;
+            DgCategorie.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            DgCategorie.Location = new Point(24, 77);
+            DgCategorie.Name = "DgCategorie";
+            DgCategorie.ReadOnly = true;
+            DgCategorie.RowTemplate.Height = 25;
+            DgCategorie.Size = new Size(544, 234);
+            DgCategorie.TabIndex = 13;
             // 
             // BtnClose
             // 
             BtnClose.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-            BtnClose.Image = Properties.Resources.cancel;
-            BtnClose.Location = new Point(1204, 265);
+            BtnClose.Image = Properties.Resources.cerrar;
+            BtnClose.Location = new Point(649, 259);
             BtnClose.Name = "BtnClose";
             BtnClose.Size = new Size(137, 52);
-            BtnClose.TabIndex = 7;
+            BtnClose.TabIndex = 12;
             BtnClose.UseVisualStyleBackColor = true;
             // 
             // BtnDelete
             // 
             BtnDelete.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-            BtnDelete.Image = Properties.Resources.save;
-            BtnDelete.Location = new Point(1204, 195);
+            BtnDelete.Image = Properties.Resources.delete;
+            BtnDelete.Location = new Point(649, 189);
             BtnDelete.Name = "BtnDelete";
             BtnDelete.Size = new Size(137, 52);
-            BtnDelete.TabIndex = 6;
+            BtnDelete.TabIndex = 11;
             BtnDelete.UseVisualStyleBackColor = true;
             // 
             // BtnEdit
             // 
             BtnEdit.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             BtnEdit.Image = Properties.Resources.edit;
-            BtnEdit.Location = new Point(1204, 127);
+            BtnEdit.Location = new Point(649, 121);
             BtnEdit.Name = "BtnEdit";
             BtnEdit.Size = new Size(137, 52);
-            BtnEdit.TabIndex = 5;
+            BtnEdit.TabIndex = 10;
             BtnEdit.UseVisualStyleBackColor = true;
             // 
             // BtnNew
             // 
             BtnNew.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             BtnNew.Image = Properties.Resources._new;
-            BtnNew.Location = new Point(1204, 58);
+            BtnNew.Location = new Point(649, 52);
             BtnNew.Name = "BtnNew";
             BtnNew.Size = new Size(137, 52);
-            BtnNew.TabIndex = 4;
+            BtnNew.TabIndex = 9;
             BtnNew.UseVisualStyleBackColor = true;
-            // 
-            // DgCategorie
-            // 
-            DgCategorie.AllowUserToAddRows = false;
-            DgCategorie.AllowUserToDeleteRows = false;
-            DgCategorie.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            DgCategorie.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
-            DgCategorie.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            DgCategorie.Location = new Point(24, 77);
-            DgCategorie.Name = "DgCategorie";
-            DgCategorie.ReadOnly = true;
-            DgCategorie.RowTemplate.Height = 25;
-            DgCategorie.Size = new Size(566, 239);
-            DgCategorie.TabIndex = 3;
             // 
             // BtnSearch
             // 
             BtnSearch.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             BtnSearch.Image = Properties.Resources.search_small;
-            BtnSearch.Location = new Point(1106, 29);
+            BtnSearch.Location = new Point(574, 23);
             BtnSearch.Name = "BtnSearch";
             BtnSearch.Size = new Size(69, 39);
-            BtnSearch.TabIndex = 2;
+            BtnSearch.TabIndex = 8;
             BtnSearch.UseVisualStyleBackColor = true;
             // 
             // TxtSearch
@@ -312,7 +250,7 @@
             TxtCategorieObservation.Location = new Point(34, 153);
             TxtCategorieObservation.Multiline = true;
             TxtCategorieObservation.Name = "TxtCategorieObservation";
-            TxtCategorieObservation.PlaceholderText = "Categorie Observation";
+            TxtCategorieObservation.PlaceholderText = "Observation";
             TxtCategorieObservation.Size = new Size(298, 73);
             TxtCategorieObservation.TabIndex = 4;
             // 
@@ -381,12 +319,6 @@
         private Label label1;
         private TabControl tabControl1;
         private TabPage tabCategorieList;
-        private Button BtnClose;
-        private Button BtnDelete;
-        private Button BtnEdit;
-        private Button BtnNew;
-        private DataGridView DgCategorie;
-        private Button BtnSearch;
         private TextBox TxtSearch;
         private Label label2;
         private TabPage tabCategorieDetail;
@@ -398,10 +330,11 @@
         private Label label5;
         private Label label4;
         private Label label3;
-        private Button button1;
-        private Button button2;
-        private Button button3;
-        private Button button4;
-        private Button button5;
+        private Button BtnClose;
+        private Button BtnDelete;
+        private Button BtnEdit;
+        private Button BtnNew;
+        private Button BtnSearch;
+        private DataGridView DgCategorie;
     }
 }
