@@ -12,6 +12,7 @@ namespace Supermarket_mvp1.Views
         event EventHandler ShowProductView;
         event EventHandler ShowCustomerView;
         event EventHandler ShowCategorieView;
+        event EventHandler ShowProvidersView;
 
     }
 }

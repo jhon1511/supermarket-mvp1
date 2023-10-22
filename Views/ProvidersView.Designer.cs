@@ -28,12 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
-            TabPage tabProvidersDetail;
+            TabPage tabPageProvidersDetail;
             BtnCancel = new Button();
             BtnSave = new Button();
-            TxtPayModeName = new TextBox();
-            TxtPayModeObservation = new TextBox();
-            TxtPayModeId = new TextBox();
+            TxtProviName = new TextBox();
+            TxtProviObservation = new TextBox();
+            TxtProviId = new TextBox();
             label5 = new Label();
             label4 = new Label();
             label3 = new Label();
@@ -50,8 +50,8 @@
             DgProviders = new DataGridView();
             TxtSearch = new TextBox();
             label2 = new Label();
-            tabProvidersDetail = new TabPage();
-            tabProvidersDetail.SuspendLayout();
+            tabPageProvidersDetail = new TabPage();
+            tabPageProvidersDetail.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             panel1.SuspendLayout();
             tabControl1.SuspendLayout();
@@ -59,23 +59,23 @@
             ((System.ComponentModel.ISupportInitialize)DgProviders).BeginInit();
             SuspendLayout();
             // 
-            // tabProvidersDetail
+            // tabPageProvidersDetail
             // 
-            tabProvidersDetail.Controls.Add(BtnCancel);
-            tabProvidersDetail.Controls.Add(BtnSave);
-            tabProvidersDetail.Controls.Add(TxtPayModeName);
-            tabProvidersDetail.Controls.Add(TxtPayModeObservation);
-            tabProvidersDetail.Controls.Add(TxtPayModeId);
-            tabProvidersDetail.Controls.Add(label5);
-            tabProvidersDetail.Controls.Add(label4);
-            tabProvidersDetail.Controls.Add(label3);
-            tabProvidersDetail.Location = new Point(4, 24);
-            tabProvidersDetail.Name = "tabProvidersDetail";
-            tabProvidersDetail.Padding = new Padding(3);
-            tabProvidersDetail.Size = new Size(801, 322);
-            tabProvidersDetail.TabIndex = 1;
-            tabProvidersDetail.Text = "Providers Detail";
-            tabProvidersDetail.UseVisualStyleBackColor = true;
+            tabPageProvidersDetail.Controls.Add(BtnCancel);
+            tabPageProvidersDetail.Controls.Add(BtnSave);
+            tabPageProvidersDetail.Controls.Add(TxtProviName);
+            tabPageProvidersDetail.Controls.Add(TxtProviObservation);
+            tabPageProvidersDetail.Controls.Add(TxtProviId);
+            tabPageProvidersDetail.Controls.Add(label5);
+            tabPageProvidersDetail.Controls.Add(label4);
+            tabPageProvidersDetail.Controls.Add(label3);
+            tabPageProvidersDetail.Location = new Point(4, 24);
+            tabPageProvidersDetail.Name = "tabPageProvidersDetail";
+            tabPageProvidersDetail.Padding = new Padding(3);
+            tabPageProvidersDetail.Size = new Size(801, 322);
+            tabPageProvidersDetail.TabIndex = 1;
+            tabPageProvidersDetail.Text = "Providers Detail";
+            tabPageProvidersDetail.UseVisualStyleBackColor = true;
             // 
             // BtnCancel
             // 
@@ -95,60 +95,60 @@
             BtnSave.TabIndex = 6;
             BtnSave.UseVisualStyleBackColor = true;
             // 
-            // TxtPayModeName
+            // TxtProviName
             // 
-            TxtPayModeName.Location = new Point(34, 101);
-            TxtPayModeName.Multiline = true;
-            TxtPayModeName.Name = "TxtPayModeName";
-            TxtPayModeName.PlaceholderText = "Product Name";
-            TxtPayModeName.Size = new Size(298, 23);
-            TxtPayModeName.TabIndex = 5;
+            TxtProviName.Location = new Point(34, 101);
+            TxtProviName.Multiline = true;
+            TxtProviName.Name = "TxtProviName";
+            TxtProviName.PlaceholderText = "Product Name";
+            TxtProviName.Size = new Size(298, 23);
+            TxtProviName.TabIndex = 5;
             // 
-            // TxtPayModeObservation
+            // TxtProviObservation
             // 
-            TxtPayModeObservation.Location = new Point(34, 153);
-            TxtPayModeObservation.Multiline = true;
-            TxtPayModeObservation.Name = "TxtPayModeObservation";
-            TxtPayModeObservation.PlaceholderText = "Product Observation";
-            TxtPayModeObservation.Size = new Size(298, 73);
-            TxtPayModeObservation.TabIndex = 4;
+            TxtProviObservation.Location = new Point(34, 153);
+            TxtProviObservation.Multiline = true;
+            TxtProviObservation.Name = "TxtProviObservation";
+            TxtProviObservation.PlaceholderText = "Product Observation";
+            TxtProviObservation.Size = new Size(298, 73);
+            TxtProviObservation.TabIndex = 4;
             // 
-            // TxtPayModeId
+            // TxtProviId
             // 
-            TxtPayModeId.Location = new Point(34, 41);
-            TxtPayModeId.Name = "TxtPayModeId";
-            TxtPayModeId.ReadOnly = true;
-            TxtPayModeId.Size = new Size(149, 23);
-            TxtPayModeId.TabIndex = 3;
-            TxtPayModeId.Text = "0";
-            TxtPayModeId.TextAlign = HorizontalAlignment.Right;
+            TxtProviId.Location = new Point(34, 41);
+            TxtProviId.Name = "TxtProviId";
+            TxtProviId.ReadOnly = true;
+            TxtProviId.Size = new Size(149, 23);
+            TxtProviId.TabIndex = 3;
+            TxtProviId.Text = "0";
+            TxtProviId.TextAlign = HorizontalAlignment.Right;
             // 
             // label5
             // 
             label5.AutoSize = true;
             label5.Location = new Point(37, 138);
             label5.Name = "label5";
-            label5.Size = new Size(116, 15);
+            label5.Size = new Size(123, 15);
             label5.TabIndex = 2;
-            label5.Text = "Prodcut Observation";
+            label5.Text = "Providers Observation";
             // 
             // label4
             // 
             label4.AutoSize = true;
             label4.Location = new Point(37, 77);
             label4.Name = "label4";
-            label4.Size = new Size(84, 15);
+            label4.Size = new Size(94, 15);
             label4.TabIndex = 1;
-            label4.Text = "Product Name";
+            label4.Text = "Company Name";
             // 
             // label3
             // 
             label3.AutoSize = true;
             label3.Location = new Point(42, 26);
             label3.Name = "label3";
-            label3.Size = new Size(62, 15);
+            label3.Size = new Size(23, 15);
             label3.TabIndex = 0;
-            label3.Text = "Product Id";
+            label3.Text = "Nit";
             // 
             // label1
             // 
@@ -184,7 +184,7 @@
             // tabControl1
             // 
             tabControl1.Controls.Add(tabProvidersList);
-            tabControl1.Controls.Add(tabProvidersDetail);
+            tabControl1.Controls.Add(tabPageProvidersDetail);
             tabControl1.Dock = DockStyle.Bottom;
             tabControl1.Location = new Point(0, 98);
             tabControl1.Name = "tabControl1";
@@ -209,7 +209,6 @@
             tabProvidersList.TabIndex = 0;
             tabProvidersList.Text = "Providers List ";
             tabProvidersList.UseVisualStyleBackColor = true;
-            tabProvidersList.Click += tabPagePayModeList_Click;
             // 
             // BtnClose
             // 
@@ -303,8 +302,8 @@
             Controls.Add(panel1);
             Name = "ProvidersView";
             Text = "ProvidersView";
-            tabProvidersDetail.ResumeLayout(false);
-            tabProvidersDetail.PerformLayout();
+            tabPageProvidersDetail.ResumeLayout(false);
+            tabPageProvidersDetail.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
@@ -325,12 +324,12 @@
         private DataGridView DgProviders;
         private TextBox TxtSearch;
         private Label label2;
-        private TabPage tabProvidersDetail;
+        private TabPage tabPageProvidersDetail;
         private Button BtnCancel;
         private Button BtnSave;
-        private TextBox TxtPayModeName;
-        private TextBox TxtPayModeObservation;
-        private TextBox TxtPayModeId;
+        private TextBox TxtProviName;
+        private TextBox TxtProviObservation;
+        private TextBox TxtProviId;
         private Label label5;
         private Label label4;
         private Label label3;
